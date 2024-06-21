@@ -26,6 +26,7 @@ export class PageBlockRenderer extends LitElement {
     `;
 
     render() {
+        console.log(this.data)
         if (!this.data) {
             return nothing;
         }

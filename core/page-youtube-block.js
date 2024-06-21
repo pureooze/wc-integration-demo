@@ -25,7 +25,7 @@ export class PageYoutubeBlock extends PageBlock {
         .url {
             padding: 10px 15px;
             background-color: #1c1f24;
-            outline: 2px solid #abb2bf;
+            outline: 2px solid #cac1a7;
             border-radius: 8px;
             color: #abb2bf;
             font-size: 16px;
@@ -35,7 +35,7 @@ export class PageYoutubeBlock extends PageBlock {
         }
 
         .url:focus {
-            outline-color: #98c379;
+            outline-color: #c3af79;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
     `;

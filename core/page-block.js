@@ -1,4 +1,4 @@
-import { LitElement, nothing } from 'lit';
+import {css, LitElement, nothing} from 'lit';
 
 export class PageBlock extends LitElement {
     static properties = {

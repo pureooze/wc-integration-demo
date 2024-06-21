@@ -12,6 +12,7 @@ export class PageBlockRenderer extends LitElement {
         :host {
             display: flex;
             justify-content: center;
+            row-gap: 1em;
         }
 
         .block {
@@ -20,6 +21,7 @@ export class PageBlockRenderer extends LitElement {
             display: flex;
             justify-content: center;
             padding: 1em;
+            margin: 1em;
         }
     `;
 

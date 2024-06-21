@@ -14,7 +14,7 @@ export class PageTextBlock extends PageBlock {
             margin: 1em 0;
             padding: 15px;
             background-color: #1c1f24;
-            outline: 2px solid #abb2bf;
+            outline: 2px solid #cac1a7;
             border-radius: 8px;
             color: #abb2bf;
             font-size: 16px;
@@ -25,11 +25,12 @@ export class PageTextBlock extends PageBlock {
         }
 
         textarea:focus {
-            outline-color: #98c379;
+            outline-color: #c3af79;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
 
         /* Optional: Placeholder text styling */
+
         textarea::placeholder {
             color: #5c6370;
         }

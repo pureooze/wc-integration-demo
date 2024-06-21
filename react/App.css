@@ -1,10 +1,9 @@
 .App {
   background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
   text-align: center;
   display: flex;
   flex-direction: column;
-  row-gap: 1em;
 }
 
 .App-logo {
@@ -22,8 +21,13 @@
   display: flex;
   flex-direction: column;
   color: white;
+  background-color: #142044;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.App-list {
+  padding: 1em 0;
 }

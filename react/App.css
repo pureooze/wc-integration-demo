@@ -4,6 +4,9 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  color: white;
+  overflow-y: auto;
+  align-items: center;
 }
 
 .App-logo {
@@ -22,6 +25,7 @@
   flex-direction: column;
   color: white;
   background-color: #142044;
+  width: 100%;
 }
 
 .App-link {
@@ -30,4 +34,27 @@
 
 .App-list {
   padding: 1em 0;
+  width: 70%;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-webkit-scrollbar-corner {
+  background: #999;
 }

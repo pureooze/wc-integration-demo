@@ -17,7 +17,7 @@ export class PageBlockRenderer extends LitElement {
 
         .block {
             background-color: #323741;
-            width: 50vw;
+            width: 100%;
             display: flex;
             justify-content: center;
             padding: 1em;
@@ -35,13 +35,21 @@ export class PageBlockRenderer extends LitElement {
             case "text":
                 return html`
                     <div class="block">
-                        <page-text-block ?editable=${this.data.editable} value="${this.data.value}"></page-text-block>
+                        <page-text-block
+                            ?editable=${this.data.editable}
+                            ?compact=${this.data.compact}
+                            value="${this.data.value}">
+                        </page-text-block>
                     </div>
                 `
             case "youtube":
                 return html`
                     <div class="block">
-                        <page-youtube-block ?editable=${this.data.editable} value="${this.data.value}"></page-youtube-block>
+                        <page-youtube-block 
+                            ?editable=${this.data.editable}
+                            ?compact=${this.data.compact}
+                            value="${this.data.value}">
+                        </page-youtube-block>
                     </div>
                 `
             default:

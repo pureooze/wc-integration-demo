@@ -34,7 +34,13 @@ export class PageTextBlock extends PageBlock {
         textarea::placeholder {
             color: #5c6370;
         }
-
+        
+        .compact {
+            color: #abb2bf;
+            font-size: large;
+            margin: 0;
+        }
+        
         .text {
             color: #abb2bf;
             font-size: x-large
@@ -47,6 +53,10 @@ export class PageTextBlock extends PageBlock {
             return html`
                 <textarea>${this.value}</textarea>
             `;
+        }
+        
+        if (this.compact) {
+            return html`<p class="compact">${this.value}</p>`
         }
 
         return html`<p class="text">${this.value}</p>`

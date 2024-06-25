@@ -37,23 +37,24 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>WebComponents In React</h1>
-      </header>
-      <div className="App-list">
-        {items.map((item, index) => (
-            <page-block-renderer
-                key={item.id}
-                draggable
-                onDragStart={(e) => handleDragStart(e, index)}
-                onDragOver={(e) => handleDragOver(e)}
-                onDrop={(e) => handleDrop(e, index)}
-                data={JSON.stringify(item)}>
-            </page-block-renderer>
-        ))}
+      <div className="App">
+        <header className="App-header">
+          <h1>WebComponents In React</h1>
+        </header>
+        <h2>Edit Mode</h2>
+        <div className="App-list">
+          {items.map((item, index) => (
+              <page-block-renderer
+                  key={item.id}
+                  draggable
+                  onDragStart={(e) => handleDragStart(e, index)}
+                  onDragOver={(e) => handleDragOver(e)}
+                  onDrop={(e) => handleDrop(e, index)}
+                  data={JSON.stringify(item)}>
+              </page-block-renderer>
+          ))}
+        </div>
       </div>
-    </div>
   );
 }
 

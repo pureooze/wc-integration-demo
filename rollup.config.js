@@ -5,6 +5,7 @@ import serve from 'rollup-plugin-serve';
 import postcss from 'rollup-plugin-postcss';
 import commonjs from '@rollup/plugin-commonjs';
 import copy from 'rollup-plugin-copy';
+import vue from 'rollup-plugin-vue';
 
 export default {
     input: './index.js',
@@ -14,6 +15,7 @@ export default {
         sourcemap: true
     },
     plugins: [
+        vue(),
         resolve({
             extensions: ['.js', '.jsx']
         }),

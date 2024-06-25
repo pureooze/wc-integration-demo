@@ -41,12 +41,20 @@ export class PageYoutubeBlock extends PageBlock {
     `;
 
     render() {
-        return html`
-            <div class="youtube">
-                ${this.editable ? html`<input class="url" value=${this.value} />` : nothing}
-                <iframe src=${this.value}></iframe>
-            </div>
-        `;
+        if (this.editable) {
+            return html`
+                <div class="youtube">
+                    ${this.editable ? html`<input class="url" value=${this.value} />` : nothing}
+                    <iframe src=${this.value}></iframe>
+                </div>
+            `;
+        }
+
+        if (this.compact) {
+            return html`<p class="compact">${this.value}</p>`
+        }
+        
+        return html`<p class="text">${this.value}</p>`;
     }
 }
 
